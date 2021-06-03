@@ -43,7 +43,7 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 7:
 
 parser = ConfigParser()
 parser.read("config.ini")
-
+kigconfig = parser("kigconfig")
 
 OWNER_ID = kigconfig.getint("OWNER_ID")
 OWNER_USERNAME = kigconfig.get("OWNER_USERNAME")
