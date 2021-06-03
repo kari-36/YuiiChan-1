@@ -39,7 +39,7 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 7:
 
 parser = ConfigParser()
 parser.read("config.ini")
-Kigconfig = parser["getitem"]
+parser = ConfigParser("kigcofig")
 
 class KigyoINIT:
     def __init__(self, parser):
