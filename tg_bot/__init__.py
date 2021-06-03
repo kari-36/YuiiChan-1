@@ -90,6 +90,7 @@ class KigyoINIT:
                 log.warning("Can't connect to SpamWatch!")
                 return sw
 
+KInit = KigyoINIT(parser=kigconfig)
 
 
 SYS_ADMIN = KInit.SYS_ADMIN
