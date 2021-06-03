@@ -44,7 +44,7 @@ class KigyoINIT:
     def __init__(self, parser):
         self.parser = parser
         self.SYS_ADMIN = self.parser.getint(str("SYS_ADMIN", 0)
-        self.OWNER_ID = self.parser.getint ('OWNER_ID', None)
+        self.OWNER_ID = self.parser.getint("OWNER_ID")
         self.OWNER_USERNAME = self.parser.get('OWNER_USERNAME', None)
         self.APP_ID = self.parser.getint("APP_ID")
         self.API_HASH = self.parser.get("API_HASH")
