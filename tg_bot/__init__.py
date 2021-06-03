@@ -39,7 +39,7 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 7:
 
 parser = ConfigParser()
 parser.read("config.ini")
-kigconfig = parser["kigconfig"]
+config = parser["config"]
 
 class KigyoINIT:
     def __init__(self, parser):
@@ -92,7 +92,7 @@ class KigyoINIT:
                 return sw
 
 
-KInit = KigyoINIT(parser=kigconfig)
+KInit = KigyoINIT(parser=config)
 
 SYS_ADMIN = KInit.SYS_ADMIN
 OWNER_ID = KInit.OWNER_ID
