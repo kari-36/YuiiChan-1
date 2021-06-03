@@ -91,7 +91,6 @@ class KigyoINIT:
                 return sw
 
 
-KInit = KigyoINIT(parser=config)
 
 SYS_ADMIN = KInit.SYS_ADMIN
 OWNER_ID = KInit.OWNER_ID
