@@ -12,7 +12,6 @@ from pyrogram.types import Chat, User
 from configparser import ConfigParser
 from rich.logging import RichHandler
 from ptbcontrib.postgres_persistence import PostgresPersistence
-from tg_bot.sample_config import kigconfig
 
 StartTime = time.time()
 
@@ -44,7 +43,6 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 7:
 
 parser = ConfigParser()
 parser.read("config.ini")
-kigconfig = parser["kigconfig"]
 
 
 OWNER_ID = kigconfig.getint("OWNER_ID")
