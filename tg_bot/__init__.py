@@ -43,7 +43,7 @@ parser.read("config.ini")
 class KigyoINIT:
     def __init__(self, parser):
         self.parser = parser
-        self.SYS_ADMIN = self.parser.kint("SYS_ADMIN", 0)
+        self.SYS_ADMIN = self.parser.getinit("SYS_ADMIN", 0)
         self.OWNER_ID = self.parser.getint('OWNER_ID')
         self.OWNER_USERNAME = self.parser.get('OWNER_USERNAME', None)
         self.APP_ID = self.parser.getint("APP_ID")
