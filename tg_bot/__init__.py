@@ -12,7 +12,7 @@ from pyrogram.types import Chat, User
 from configparser import ConfigParser
 from rich.logging import RichHandler
 from ptbcontrib.postgres_persistence import PostgresPersistence
-from sample_config.ini import kigconfig
+from tg_bot.sample_config import kigconfig
 
 StartTime = time.time()
 
